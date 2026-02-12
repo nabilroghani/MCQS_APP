@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './Layout/Navbar'
 import Header from './Layout/Header'
+import Home from './pages/Home'
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       {/* Added MT-8 (Margin Top) so content shows below the headers */}
       <main className="max-w-7xl mx-auto px-4 mt-8 pb-10">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/app" element={<PakApp />} />
@@ -27,11 +28,11 @@ const App = () => {
 }
 
 // Fixed Dummy Components with background and padding to be clearly visible
-const Home = () => (
-  <div className="p-10 text-center text-2xl bg-white shadow rounded-lg border border-gray-200">
-    Home Page - Welcome to PakMCQS
-  </div>
-);
+// const Home = () => (
+//   <div className="p-10 text-center text-2xl bg-white shadow rounded-lg border border-gray-200">
+//     Home Page - Welcome to PakMCQS
+//   </div>
+// );
 
 const About = () => <div className="p-10 text-center text-2xl bg-white shadow rounded-lg">About Us Page</div>;
 const Contact = () => <div className="p-10 text-center text-2xl bg-white shadow rounded-lg">Contact Us Page</div>;
